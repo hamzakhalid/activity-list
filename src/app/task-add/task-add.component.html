@@ -1,0 +1,41 @@
+<h2 class="text-center">Activities</h2>
+
+<form [formGroup]="taskForm" class="mt-5" (ngSubmit)="createTask()">
+  <div class="d-flex gap-2">
+    <div class="d-flex gap-2 icon-line">
+      <div class="d-flex flex-column align-items-center add-margin">
+        <div class="type-icon">
+          <i class="fa-solid fa-list"></i>
+        </div>
+        <div class="ver-line"></div>
+      </div>
+    </div>
+    <div class="card border-0 mb-3 flex-grow-1">
+      <div class="card-body">
+        <textarea
+          id="taskNote"
+          class="form-control"
+          formControlName="note"
+          placeholder="Add a note about Hamza Khalid"
+        ></textarea>
+        <div class="d-flex gap-2 align-items-center my-3">
+          <button
+            type="button"
+            *ngFor="let type of ['Note', 'Phone', 'Coffee', 'Beer', 'Meeting']"
+            class="btn type-btn"
+            [ngClass]="{ active: selectedType === type }"
+            (click)="updateTitle(type)"
+            [title]="type"
+          >
+            <img [src]="'../assets/images/' + type + '.png'" class="w-100 h-100" alt="" />
+          </button>
+          <div class="ms-auto">
+            <button type="submit" class="btn submit-btn" [disabled]="taskForm.invalid">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
