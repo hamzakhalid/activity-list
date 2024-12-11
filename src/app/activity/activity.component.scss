@@ -1,0 +1,37 @@
+.card {
+    background-color: #f6f6f6;
+  }
+  .card h5 {
+    font-weight: 700;
+  }
+  .card h5 span {
+    color: #00c6ee;
+  }
+  .card p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .icon-line {
+    width: 19%;
+  }
+  .timestamp{
+    font-size: 12px;
+    color: #9f9e9e;
+  }
+  .ver-line {
+    height: 100%;
+    width: 4px;
+    background-color: #f6f6f6;
+  }
+  .type-icon {
+    border: 1px solid grey;
+    border-radius: 100%;
+    padding: 8px;
+    cursor: pointer;
+    width: 42px;
+    height: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
