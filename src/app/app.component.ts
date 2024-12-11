@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ActivityComponent } from './activity/activity.component';
-import { TaskAddComponent } from './task-add/task-add.component';
 import { ReactiveFormsModule } from "@angular/forms";
 
 
