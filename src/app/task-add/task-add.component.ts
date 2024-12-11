@@ -40,13 +40,18 @@ export class TaskAddComponent {
   }
 
   createTask(): void {
-    console.log("sdncsjdkbfdbnflkdnfvlkfdnvndf")
     if (this.taskForm.valid) {
       const { note, type, title, user } = this.taskForm.value;
       const timestamp = new Date().toISOString();
-
       if (note && type && title && user) {
         this.storage.add(note, type, title, timestamp, user);
+        this.taskForm.reset({
+          type: null,
+          user: 'Hamza Khalid',
+          note: '',
+          title: '',
+        });
+        this.selectedType = null;
         this.router.navigate(["/"]);
       }
     }
