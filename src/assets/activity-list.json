@@ -1,0 +1,28 @@
+{
+  "init_tasks": [
+    {
+      "id": 1,
+      "timestamp": "2024-12-09T12:00:00Z",
+      "title": "had a meeting with",
+      "type": "Meeting",
+      "note": "And a more formal meeting.",
+      "user": "Hamza Khalid"
+    },
+    {
+      "id": 2,
+      "timestamp": "2024-12-07T12:00:00Z",
+      "title": "had a call with",
+      "type": "Phone",
+      "note": "The we had a followup phone call!",
+      "user": "Hamza Khalid"
+    },
+    {
+      "id": 3,
+      "timestamp": "2024-12-01T12:00:00Z",
+      "title": "had a coffee with",
+      "type": "Coffee",
+      "note": "We had Coffee.",
+      "user": "Hamza Khalid"
+    }
+  ]
+}
