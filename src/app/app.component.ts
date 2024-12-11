@@ -6,7 +6,7 @@ import { ReactiveFormsModule } from "@angular/forms";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ReactiveFormsModule, ActivityComponent, TaskAddComponent],
+  imports: [RouterOutlet, ReactiveFormsModule, ActivityComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
